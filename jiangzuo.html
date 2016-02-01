@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC
+"-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<script type="text/javascript" src="jquery.js" charset="utf-8"></script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+		var imgWrapper = $('.slideshow_two > img');
+
+		// only show the first image, hide the rest
+
+		imgWrapper.hide().filter(':first').show();
+		
+		$('ul.recentlist_a li a').click(function () {
+		
+			// check if this item doesn't have class "current"
+			// if it has class "current" it must not execute the script again
+			if (this.className.indexOf('current') == -1){
+				imgWrapper.hide();
+				imgWrapper.filter(this.hash).fadeIn(500);
+				$('ul.recentlist_a li a').removeClass('current');
+				$(this).addClass('current');
+			}
+			return false;
+		});
+	});
+	</script>
+<title>北京理工大学珠海学院 —— 大学生职业发展协会 讲座交流部</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="style.css" type="text/css" rel="stylesheet" media="screen">
+<link href="main.css" type="text/css" rel="stylesheet" media="screen">
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/styleswitch.js"></script>
+<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+<script type="text/javascript" src="js/jquery.lavalamp.js"></script>
+<script type="text/javascript" src="js/slide.noconflict.js"></script>
+<script type="text/javascript" src="js/glide.noconflict.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function() {
+	$(".Navi ul").lavaLamp({
+		fx: "backout", 
+		speed: 700,
+		click: function(event, menuItem) {
+			return true;
+		}
+	});
+});
+
+</script>
+
+</head>
+<body>
+	<div id="header">
+		<div class="header_style"><a href="#">⊙网站导航</a></div>
+		<div class="header_menu">
+			<ul>
+				<li><a href="index.html">职协首页</a></li>
+				<li>|</li>
+				<li><a href="apartment.html">职协部门</a></li>
+				<li>|</li>
+				<li><a href="news.html">职协新闻</a></li>
+				<li>|</li>
+				<li><a href="about.html">关于职协</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="content">
+		<div title="大学生职业发展协会logo">
+			<div class="logo"></div>
+			<div class="word"></div>
+		</div>
+			<div class="page_info">
+			<a href="#" onClick="setHome(this,'#')">设为首页</a> 
+			<a href="javascript:void(0)" onClick="addFavorite('#','大学生职业发展协会');">加入收藏</a>
+			</div>
+	</div>
+<div id="menu">
+	<div id="menu_bar">
+		
+		<div id="wrapper">
+  
+  			<div class="Navi"> 
+
+   			 <ul>
+     				<li class="page_item page-item-22"><a href="index.html">职协首页</a></li>
+     				<li class="page_item page-item-21"><a href="office.html">办公室</a></li>
+      				<li class="page_item page-item-25"><a href="diaoyan.html">调研部</a></li>
+      				<li class="page_item page-item-26"><a href="xuanchuan.html">宣传部</a></li>
+      				<li class="page_item page-item-24"><a href="zhigui.html">职规部</a></li>
+					<li class="page_item page-item-24"><a href="wailian.html">外联部</a></li>
+			        <li class="page_item page-item-24"><a href="jiangzuo.html">讲座交流部</a></li>
+   			</ul>
+    
+          </div>
+		</div>
+	
+	</div>
+</div>
+
+<div id="basic_apartment">
+	<div id="basic_inside">
+		<ul>
+			<li><a href="xinwen.html">新闻组</a></li>
+			<li><a href="wangluo.html">网络组</a></li>
+			<li><a href="zhuchi.html">主持组</a></li>
+			<li><a href="peixun.html">培训组</a></li>
+		</ul>
+	</div>
+</div>
+
+<div id="wailian_box_top">
+</div>
+<div id="news_wailian_middle">
+	<div id="new_jiangzuo_top">
+		<div class="slideshow_two">
+			<ul class="recentlist_a">
+
+				<li><a href="#slide1">1</a></li>
+
+				<li><a href="#slide2">2</a></li>
+			
+				<li><a href="#slide3">3</a></li>
+				
+				<li><a href="#slide4">4</a></li>
+			</ul>
+			<img id="slide1" src="image/test.jpg" />
+			<img id="slide2" src="image/test.jpg" />
+			<img id="slide3" src="image/test.jpg" />
+			<img id="slide4" src="image/test.jpg" />
+		</div>
+	</div>
+	
+	<div id="new_jiangzuo_content">
+		<center><div class="new_jiangzuo_title">讲座交流部</div></center>
+		<div class="new_jiangzuo_inside">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;测试测试测试测试试测试测试测试测试试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试</div>
+		
+		<div id="new_jiangzuo_bottom">
+			<div class="jiangzuo_word">
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;测试测试测试测试测试测试测试测试测试测试测试测测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试
+			</div>
+		</div>
+		
+		<div id="new_jiangzuo_bottom_two">
+			<div class="jiangzuo_right_pic">
+				<ul>
+					<li><img src="image/test2.jpg" /></li>
+					<li class="jiangzuo_right_buchong">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+<div id="footer">
+<div class="footer_top">大学生职业发展协会</div>
+<div class="footer_style">&copy;2011 all rights reserved. &nbsp;&nbsp; design by <a href="#">phoenix</a>.</div>
+</div>
+</body>
+</html>

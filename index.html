@@ -1,0 +1,175 @@
+﻿<!DOCTYPE html PUBLIC
+"-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<script type="text/javascript" src="jquery.js" charset="utf-8"></script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+		var imgWrapper = $('.slideshow > img');
+
+		// only show the first image, hide the rest
+
+		imgWrapper.hide().filter(':first').show();
+		
+		$('ul.recentlist li a').click(function () {
+		
+			// check if this item doesn't have class "current"
+			// if it has class "current" it must not execute the script again
+			if (this.className.indexOf('current') == -1){
+				imgWrapper.hide();
+				imgWrapper.filter(this.hash).fadeIn(500);
+				$('ul.recentlist li a').removeClass('current');
+				$(this).addClass('current');
+			}
+			return false;
+		});
+	});
+	</script>
+<title>北京理工大学珠海学院 —— 大学生职业发展协会 HOME</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="style.css" type="text/css" rel="stylesheet" media="screen">
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/styleswitch.js"></script>
+<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+<script type="text/javascript" src="js/jquery.lavalamp.js"></script>
+<script type="text/javascript" src="js/slide.noconflict.js"></script>
+<script type="text/javascript" src="js/glide.noconflict.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function() {
+	$(".Navi ul").lavaLamp({
+		fx: "backout", 
+		speed: 700,
+		click: function(event, menuItem) {
+			return true;
+		}
+	});
+});
+
+</script>
+
+</head>
+<body>
+	<div id="header">
+		<div class="header_style"><a href="#">⊙网站导航</a></div>
+		<div class="header_menu">
+			<ul>
+				<li><a href="#">职协首页</a></li>
+				<li>|</li>
+				<li><a href="apartment.html">职协部门</a></li>
+				<li>|</li>
+				<li><a href="news.html">职协新闻</a></li>
+				<li>|</li>
+				<li><a href="about.html">关于职协</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="content">
+		<div title="大学生职业发展协会logo">
+			<div class="logo"></div>
+			<div class="word"></div>
+		</div>
+			<div class="page_info">
+			<a href="#" onClick="setHome(this,'#')">设为首页</a> 
+			<a href="javascript:void(0)" onClick="addFavorite('#','大学生职业发展协会');">加入收藏</a>
+			</div>
+	</div>
+<div id="menu">
+	<div id="menu_bar">
+		
+		<div id="wrapper">
+  
+  			<div class="Navi"> 
+
+   			 <ul>
+     				<li class="page_item page-item-22"><a href="#">职协首页</a></li>
+     				<li class="page_item page-item-21"><a href="office.html">办公室</a></li>
+      				<li class="page_item page-item-25"><a href="diaoyan.html">调研部</a></li>
+      				<li class="page_item page-item-26"><a href="xuanchuan.html">宣传部</a></li>
+      				<li class="page_item page-item-24"><a href="zhigui.html">职规部</a></li>
+					<li class="page_item page-item-24"><a href="wailian.html">外联部</a></li>
+			        <li class="page_item page-item-24"><a href="jiangzuo.html">讲座交流部</a></li>
+   			</ul>
+    
+		       </div>
+		</div>
+	
+	</div>
+</div>
+
+<div id="ads"></div>
+
+<div id="news">
+	<div id="news_pic">
+	
+
+<div class="slideshow">
+		<ul class="recentlist">
+
+			<li><a href="#slide1">1</a></li>
+
+			<li><a href="#slide2">2</a></li>
+			
+			<li><a href="#slide3">3</a></li>
+		</ul>
+		<img id="slide1" src="image/home_image1.jpg" />
+		<img id="slide2" src="image/home_image2.jpg" />
+		<img id="slide3" src="image/home_image3.jpg" />
+	</div>
+
+
+	</div>
+	<div id="news_right">
+		<div class="news_right_style_head">欢迎来到职协</div>
+		<div class="news_right_style_content">职协的网站上线啦！职协的发展离不开大家的支持，希望在这里，你可以真正了解职协这个大家庭~</div>
+		<div class="news_right_style_scda">SCDA </div>
+		<div class="news_right_style_scda_words">student career development association</div>
+	</div>
+	<div id="news_right_bottom">
+		<div class="news_right_bottom_style">每日新闻：XXXXXXXXXXXXXXX</div>
+		<div class="news_right_readmore"><a href="xinwen.html">read more</a></div>
+	</div>
+	
+	<div id="news_one" title="about SCDA">
+		<div class="news_one_style"><a href="about.html">关于职协</a></div>
+	</div>
+	<div id="news_two" title="Apartment">
+		<div class="news_one_style"><a href="apartment.html">部门介绍</a></div>
+	</div>
+
+</div>
+
+<div id="middle">
+	<div id="middle_inside">
+	  <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0" width="905" height="175">
+          <param name="movie" value="image/animation.swf" />
+          <param name="quality" value="high" />
+          <embed src="image/animation.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="905" height="175"></embed>
+	  </object>
+	</div>
+</div>
+
+<div id="last">
+	<div id="last_apart">
+		<ul>
+			<li>职协专业组▶</li>
+			<li><a href="xinwen.html">新闻组</a></li>
+			<li><a href="wangluo.html">网络组</a></li>
+			<li><a href="zhuchi.html">主持组</a></li>
+			<li><a href="peixun.html">培训组</a></li>
+		</ul>
+	</div>
+	<div id="last_content">
+		<div id="last_inside">
+			<div class="last_inside_style">介绍：XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</div>
+		</div>
+	</div>
+</div>
+
+<div id="footer">
+<div class="footer_top">大学生职业发展协会</div>
+<div class="footer_style">&copy;2011 all rights reserved. &nbsp;&nbsp; design by <a href="#">phoenix</a>.</div>
+</div>
+</body>
+</html>
